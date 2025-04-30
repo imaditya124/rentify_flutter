@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rentify/config/routes.dart';
+import 'package:provider/provider.dart';
+import 'package:rentify/providers/auth_provider.dart';
 
 class OtpScreen extends StatefulWidget {
   final String email;

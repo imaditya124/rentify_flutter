@@ -15,28 +15,8 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
 
     try {
-      // TODO: Implement API call to send OTP
-      await Future.delayed(const Duration(seconds: 2)); // Simulate network call
-
-      // On success
-      _error = null;
-    } catch (e) {
-      _error = e.toString();
-    } finally {
-      _isLoading = false;
-      notifyListeners();
-    }
-  }
-
-  Future<void> verifyOtp(String email, String otp) async {
-    _isLoading = true;
-    notifyListeners();
-
-    try {
-      // TODO: Implement API call to verify OTP
-      await Future.delayed(const Duration(seconds: 2)); // Simulate network call
-
-      // On success
+      // TODO: Implement login logic
+      await Future.delayed(const Duration(seconds: 2));
       _user = User(
         id: '1',
         name: 'Test User',
@@ -53,15 +33,20 @@ class AuthProvider with ChangeNotifier {
     }
   }
 
-  Future<void> resetPassword(String email) async {
+  Future<void> verifyOtp(String email, String otp) async {
     _isLoading = true;
     notifyListeners();
 
     try {
-      // TODO: Implement API call to reset password
-      await Future.delayed(const Duration(seconds: 2)); // Simulate network call
-
-      // On success
+      // TODO: Implement OTP verification
+      await Future.delayed(const Duration(seconds: 2));
+      _user = User(
+        id: '1',
+        name: 'Test User',
+        email: email,
+        phone: '9876543210',
+        role: 'TENANT',
+      );
       _error = null;
     } catch (e) {
       _error = e.toString();

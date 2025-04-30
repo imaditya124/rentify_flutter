@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rentify/config/routes.dart';
 import 'package:rentify/widgets/custom_textfield.dart';
+import 'package:provider/provider.dart';
+import 'package:rentify/providers/auth_provider.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

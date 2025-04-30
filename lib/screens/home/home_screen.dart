@@ -5,6 +5,7 @@ import 'package:rentify/screens/chat/chat_list.dart';
 import 'package:rentify/screens/create_ad/create_ad_screen.dart';
 import 'package:rentify/screens/my_ads/my_ads_screen.dart';
 import 'package:rentify/widgets/bottom_nav_bar.dart';
+import 'package:rentify/widgets/property_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

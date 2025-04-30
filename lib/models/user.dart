@@ -12,24 +12,4 @@ class User {
     required this.phone,
     required this.role,
   });
-
-  factory User.fromJson(Map<String, dynamic> json) {
-    return User(
-      id: json['id'].toString(),
-      name: json['name'],
-      email: json['email'],
-      phone: json['phone'],
-      role: json['role'],
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'name': name,
-      'email': email,
-      'phone': phone,
-      'role': role,
-    };
-  }
 }
